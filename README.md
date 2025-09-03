@@ -17,61 +17,26 @@ API desarrollada en **.NET 8** con **SQL Server**, orientada a gestionar propied
 
 ## 📂 Arquitectura
 
-API_Million.RealEstate
-│
-├── Million.Api
-│   ├── Connected Services
-│   ├── Dependencias
-│   ├── Properties
-│   ├── wwwroot
-│   ├── Controllers
-│   │   ├── AuthController.cs
-│   │   └── PropertiesController.cs
-│   ├── UploadedFiles
-│   ├── appsettings.json
-│   ├── Program.cs
-│   └── README.md
-│
-├── Million.Application
-│   ├── Dependencias
-│   ├── DTOs
-│   │   ├── AddImageRequest.cs
-│   │   ├── ChangePriceRequest.cs
-│   │   ├── CreateOwnerRequest.cs
-│   │   ├── CreatePropertyRequest.cs
-│   │   ├── JwtSecretKey.cs
-│   │   ├── PropertyDto.cs
-│   │   ├── PropertyFilter.cs
-│   │   └── UpdatePropertyRequest.cs
-│   ├── Interfaces
-│   │   ├── IAuthentication.cs
-│   │   ├── IFileStorage.cs
-│   │   └── IPropertyService.cs
-│   └── README.md
-│
-├── Million.Domain
-│   ├── Dependencias
-│   ├── Analizadores
-│   ├── Marcos de trabajo
-│   ├── Entities
-│   │   ├── LoginRequest.cs
-│   │   ├── Owner.cs
-│   │   ├── Property.cs
-│   │   ├── PropertyImage.cs
-│   │   └── PropertyTrace.cs
-│   └── README.md
-│
-├── Million.Infrastructure
-│   ├── Dependencias
-│   ├── Persistence
-│   │   └── RealEstateDbContext.cs
-│   ├── Services
-│   │   ├── AuthenticationService.cs
-│   │   ├── FileStorage.cs
-│   │   └── PropertyService.cs
-│   └── README.md
-│
-└── Million.Tests
-    ├── Dependencias
-    ├── PropertyServiceTests.cs
-    └── README.md
+| **Carpeta**               | **Contenido**                                                                 |
+|---------------------------|-------------------------------------------------------------------------------|
+| `Million.Api`              | Contiene los controladores y configuraciones principales.                     |
+|                           | - `AuthController.cs`                                                         |
+|                           | - `PropertiesController.cs                                                   |
+|                           | - `appsettings.json`                                                          |
+|                           | - `Program.cs`                                                                |
+|                           | - `README.md`                                                                |
+| `Million.Application`      | Contiene los DTOs, interfaces y lógica de negocio.                             |
+|                           | - `DTOs/`                                                                     |
+|                           | - `Interfaces/`                                                               |
+|                           | - `README.md`                                                                |
+| `Million.Domain`           | Contiene las entidades del dominio.                                           |
+|                           | - `Entities/`                                                                 |
+|                           | - `README.md`                                                                |
+| `Million.Infrastructure`   | Contiene la infraestructura de acceso a datos y otros servicios.              |
+|                           | - `Persistence/`                                                              |
+|                           | - `Services/`                                                                 |
+|                           | - `README.md`                                                                |
+| `Million.Tests`            | Contiene las pruebas unitarias del proyecto.                                  |
+|                           | - `PropertyServiceTests.cs`                                                   |
+|                           | - `README.md`                                                                |
+
