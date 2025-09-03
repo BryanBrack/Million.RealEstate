@@ -4,7 +4,7 @@ API desarrollada en **.NET 8** con **SQL Server**, orientada a gestionar propied
 
 ## 🚀 Tecnologías usadas
 - ASP.NET Core 8 (Web API)
-- Entity Framework Core 8
+- Dapper
 - SQL Server
 - JWT (Autenticación)
 - NUnit (Unit Testing)
